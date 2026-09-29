@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Club Sign-Up</h1>
+    <form action="#" method="GET">
+        <label for="fullname">Full Name: </label>
+        <input type="text" name="fullname" id="fullname" required>
+        <br>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <label for="number">Age: </label>
+        <input type="number" name="age" id="number" min="13" max="19">
+        <br>
+        <label for="startdate">Day you can start: </label>
+        <input type="date" name="startdate" id="startdate">
+        <br>
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password" required>
+        <br>
+        <fieldset>
+            <legend>Select Your Grade</legend>
+            <label for="grade-9">Grade 9</label>
+            <input type="radio" name="grade" id="grade-9">
+            <label for="grade-10">Grade 10</label>
+            <input type="radio" name="grade" id="grade-10">
+            <label for="grade-11">Grade 11</label>
+            <input type="radio" name="grade" id="grade-11">
+            <label for="grade-12">Grade 12</label>
+            <input type="radio" name="grade" id="grade-12">
+            <label for="grade-13">Grade 13?</label>
+            <input type="radio" name="grade" id="grade-13">
+            <!-- <label for="period">Select Period: </label> -->
+            <select name="period">
+                <option value="" dissabled slected required>Select Period</option>
+                <option value="1">Period 1</option>
+                <option value="2">Period 2</option>
+                <option value="3">Period 3</option>
+            </select>
+            <label for="check">Random Check Box: </label>
+            <input type="checkbox"name="check" id="check" required>
+        </fieldset>
+        <button type="submit">Join the club</button>
+    </form>
+</body>
+</html>
