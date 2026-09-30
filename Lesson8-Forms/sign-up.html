@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FORM 1</title>
 </head>
 <body>
     <h1>Club Sign-Up</h1>
-    <form action="#" method="GET">
+    <form action="display.html" method="GET">
         <label for="fullname">Full Name: </label>
-        <input type="text" name="fullname" id="fullname" required>
+        <input type="text" name="fullname" id="fullname" value="Bob B. Bobson" required minlength="1" maxlength="12">
         <br>
         <label for="email">Email: </label>
-        <input type="email" name="email" id="email" required>
+        <input type="email" name="email" id="email" placeholder="you@bergen.org" required>
         <br>
         <label for="number">Age: </label>
-        <input type="number" name="age" id="number" min="13" max="19">
+        <input type="number" name="age" id="number" min="1" max="100000" placeholder="Eleventeen">
         <br>
         <label for="startdate">Day you can start: </label>
         <input type="date" name="startdate" id="startdate">
@@ -26,7 +26,7 @@
         <fieldset>
             <legend>Select Your Grade</legend>
             <label for="grade-9">Grade 9</label>
-            <input type="radio" name="grade" id="grade-9">
+            <input type="radio" name="grade" id="grade-9" value="9">
             <label for="grade-10">Grade 10</label>
             <input type="radio" name="grade" id="grade-10">
             <label for="grade-11">Grade 11</label>
@@ -35,9 +35,10 @@
             <input type="radio" name="grade" id="grade-12">
             <label for="grade-13">Grade 13?</label>
             <input type="radio" name="grade" id="grade-13">
+            <br>
             <!-- <label for="period">Select Period: </label> -->
             <select name="period">
-                <option value="" dissabled slected required>Select Period</option>
+                <option value="" disabled selected required>Select Period</option>
                 <option value="1">Period 1</option>
                 <option value="2">Period 2</option>
                 <option value="3">Period 3</option>
@@ -45,6 +46,20 @@
             <label for="check">Random Check Box: </label>
             <input type="checkbox"name="check" id="check" required>
         </fieldset>
+            <fieldset>
+                <legend>Which Days can you meet?</legend>
+                <label for="mon">Monday</label>
+                <input type="checkbox" name="days" id="mon">
+                <label for="tue">Tuesday</label>
+                <input type="checkbox" name="days" id="tue">
+                <label for="wed">Wednesday</label>
+                <input type="checkbox" name="days" id="wed">
+                <label for="another">Another day</label>
+                <input type="checkbox" name="days" id="another">
+            </fieldset>
+            <label for="why">Why do you want to join?</label>
+            <textarea name="why" id="why"></textarea>
+            <br>
         <button type="submit">Join the club</button>
     </form>
 </body>
